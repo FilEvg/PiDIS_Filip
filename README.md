@@ -1,7 +1,6 @@
 # PiDIS_Filip
 # Руководство по установке и запуску — АИС «Паспортный стол»
 
-> Файл: `INSTALL.md` (положите в корень репозитория).
 > Актуально для состава репозитория: PHP-сайт + MariaDB + C++-генератор PDF (`cpp/pdfgen.cpp`),
 > сборщик `build.php`, маршрутизатор `router.php`, демо-данные и API `GET /api/notes`.
 
@@ -166,7 +165,7 @@ php -S localhost:3000 router.php
 | Симптом | Причина / решение |
 |---|---|
 | `build.php`: `[ X ] расширение …` | Доустановить пакет расширения (раздел 2), перезапустить терминал |
-| Капча не рисуется / пустые квадраты | Не включено `gd`: `php -m | grep gd`; включить в `php.ini` (`extension=gd`) |
+| Капча не рисуется / пустые квадраты | Не включено `gd`: `php -m \| grep gd` ; включить в `php.ini` (`extension=gd`) |
 | Экспорт Excel отдаёт `.csv` | Нет `ZipArchive` (расширение `zip`) — это штатный фолбэк, либо включить `zip` |
 | `не удалось скомпилировать pdfgen` | Старый g++ без C++17/filesystem: обновите компилятор; либо соберите вручную командой из раздела 4 |
 | PDF: `не найден TTF-шрифт с кириллицей` | Поставить шрифт (`dejavu-sans-fonts`) **или** задать переменную окружения: `PDFGEN_FONT=/путь/к/шрифту.ttf php -S localhost:3000 router.php` (Windows: `PDFGEN_FONT=C:\Windows\Fonts\arial.ttf`) |
@@ -180,22 +179,21 @@ php -S localhost:3000 router.php
 
 ## 7. Состав репозитория (ориентир)
 
-```
-index.php, verify.php, register.php      вход (логин+пароль+капча), 2FA, саморегистрация
-dashboard.php, citizens.php, passports.php, applications.php, transactions.php,
-report.php, document.php, pdf.php, import_export.php, password.php   основные разделы
-admin_panel.php, admin_users.php, admin_journal.php, admin_sql.php   панель администратора
-api/notes.php + router.php               API GET /api/notes (Приложение 2)
-config.php, config/modules.php           настройки БД/PDF и реестр модулей меню
-components/ (puzzle, messages, password_checklist)   переиспользуемые части страниц
-mfa_lib.php, captcha_lib.php, captcha.php            2FA и капча-пазл
-xlsx_writer.php, doc_data.php            экспорт Excel и шаблоны документов {{таблица.поле}}
-schema.sql, notes_migration.sql, install.php, build.php   БД и установка
-cpp/pdfgen.cpp                           C++-генератор PDF (кириллица, TTF)
-postman/notes_collection.json            тесты API
-layout/ (header, admin_header, footer)   шапки и подвал
-assets/ (style.css, app.js, captcha/)    стили, JS, картинки капчи
-```
+| Файлы | Что  делают |
+|---|---|
+| index.php, verify.php, register.php | вход (логин+пароль+капча), 2FA, саморегистрация |
+| dashboard.php, citizens.php, passports.php, applications.php, transactions.php, report.php, document.php, pdf.php, import_export.php, password.php | основные разделы |
+| admin_panel.php, admin_users.php, admin_journal.php, admin_sql.php | панель администратора |
+| api/notes.php + router.php | API GET /api/notes (Приложение 2) |
+| config.php, config/modules.php | настройки БД/PDF и реестр модулей меню |
+| components/ (puzzle, messages, password_checklist) | переиспользуемые части страниц |
+| mfa_lib.php, captcha_lib.php, captcha.php | 2FA и капча-пазл |
+| xlsx_writer.php, doc_data.php | экспорт Excel и шаблоны документов {{таблица.поле}} |
+| schema.sql, notes_migration.sql, install.php, build.php | БД и установка |
+| cpp/pdfgen.cpp | C++-генератор PDF (кириллица, TTF) |
+| postman/notes_collection.json | тесты API |
+| layout/ (header, admin_header, footer) | шапки и подвал |
+| assets/ (style.css, app.js, captcha/) | стили, JS, картинки капчи |
 
 ---
 
