@@ -240,10 +240,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $kind = $_POST['kind'] ?? 'json';
 
     if ($kind === 'sql') {
-        if (!is_role('администратор')) {
-            flash('err', 'Импорт SQL-дампа доступен только администратору: файл содержит произвольные операторы БД.');
-            header('Location: import_export.php'); exit;
-        }
         $file = $_FILES['sql'] ?? null;
         if (!$file || $file['error'] !== UPLOAD_ERR_OK) {
             flash('err', 'Выберите SQL-файл дампа (кнопка «Обзор»), затем нажмите «Импортировать SQL».');
@@ -362,14 +358,12 @@ require __DIR__ . '/layout/header.php';
 <input class="input" type="file" name="json" accept=".json,application/json" required>
 <div class="form-actions"><button class="btn"><i class="fa-solid fa-upload"></i> Импорт JSON</button></div>
 </form>
-<?php if (is_role('администратор')): ?>
 <form method="post" enctype="multipart/form-data" style="margin-top:12px">
 <?= csrf_field() ?><input type="hidden" name="kind" value="sql">
 <input class="input" type="file" name="sql" accept=".sql,application/sql" required>
 <div class="form-actions"><button class="btn btn-outline"><i class="fa-solid fa-upload"></i> Импорт SQL</button></div>
 </form>
 <p class="muted">SQL: операторы дампа выполняются последовательно.</p>
-<?php endif; ?>
 </div>
 </div>
 <div class="card">
