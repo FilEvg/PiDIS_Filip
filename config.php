@@ -2,10 +2,10 @@
 declare(strict_types=1);
 session_start();
 // ================= НАСТРОЙКИ =================
-define('DB_HOST', '127.0.0.1');
-define('DB_NAME', 'passport_db');
-define('DB_USER', 'admin');
-define('DB_PASS', 'admin');
+define('DB_HOST', '134.90.167.42:10306');
+define('DB_NAME', 'project_Filippov');
+define('DB_USER', 'Filippov');
+define('DB_PASS', 'tU/aX8o(jX9q)dvq');
 // Путь к C++ генератору PDF (собирается из /cpp/pdfgen.cpp, см. build.php).
 define('PDFGEN_BIN', __DIR__ . '/cpp/' . (PHP_OS_FAMILY === 'Windows' ? 'pdfgen.exe' : 'pdfgen'));
 // Ключ AES-256-GCM (256 бит = 64 hex-символа). В учебном стенде хранится в конфиге;

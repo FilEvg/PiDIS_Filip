@@ -1,0 +1,1643 @@
+{
+    "citizens": [
+        {
+            "citizen_id": 1,
+            "last_name": "Иванов",
+            "first_name": "Иван",
+            "middle_name": "Иванович",
+            "birth_date": "1990-05-12",
+            "sex": "М",
+            "phone": "+79170000001",
+            "email": "ivanov@mail.ru",
+            "reg_address": "г. Казань, ул. Баумана, д. 12, кв. 34",
+            "reg_status": "активна",
+            "reg_start_date": "2018-03-01",
+            "reg_end_date": null
+        },
+        {
+            "citizen_id": 2,
+            "last_name": "Петрова",
+            "first_name": "Анна",
+            "middle_name": "Сергеевна",
+            "birth_date": "1985-11-03",
+            "sex": "Ж",
+            "phone": "+79170000002",
+            "email": "petrova@mail.ru",
+            "reg_address": "г. Казань, ул. Гагарина, д. 8, кв. 12",
+            "reg_status": "активна",
+            "reg_start_date": "2015-07-20",
+            "reg_end_date": null
+        },
+        {
+            "citizen_id": 3,
+            "last_name": "Сидоров",
+            "first_name": "Пётр",
+            "middle_name": "Алексеевич",
+            "birth_date": "2000-02-29",
+            "sex": "М",
+            "phone": "+79170000003",
+            "email": null,
+            "reg_address": "г. Казань, ул. Ленина, д. 45, кв. 7",
+            "reg_status": "активна",
+            "reg_start_date": "2020-01-15",
+            "reg_end_date": null
+        }
+    ],
+    "passports": [
+        {
+            "passport_id": 1,
+            "citizen_id": 1,
+            "series": "1234",
+            "number": "456789",
+            "issue_date": "2018-04-10",
+            "expiry_date": null,
+            "issuer": "ГУ МВД по Республике Татарстан",
+            "status": "действует",
+            "reason": "Достижение 14 лет"
+        }
+    ],
+    "applications": [
+        {
+            "application_id": 1,
+            "citizen_id": 1,
+            "operator_id": 2,
+            "service_type": "Регистрация гражданина",
+            "status": "завершено",
+            "created_at": "2018-03-01 10:00:00",
+            "updated_at": "2026-10-06 09:28:07"
+        },
+        {
+            "application_id": 2,
+            "citizen_id": 1,
+            "operator_id": 2,
+            "service_type": "Выдача паспорта",
+            "status": "подано",
+            "created_at": "2026-10-06 10:27:31",
+            "updated_at": "2026-10-16 13:53:09"
+        }
+    ],
+    "users": [
+        {
+            "user_id": 1,
+            "login": "admin",
+            "password_hash": "$argon2id$v=19$m=65536,t=4,p=1$DxzZ9FV\/WPaX5RZjswA\/Yw$3tVC5Sp7xUZWzqZ2UBKe0Onu9MsXV74vqaDbM4pvYaM",
+            "role": "администратор",
+            "mfa_secret": "ifXPFzVtRgd3olgroWVVfQ==",
+            "last_password_change": "2026-09-29",
+            "failed_attempts": 0,
+            "is_blocked": 0,
+            "is_deleted": 0,
+            "locked_until": null
+        },
+        {
+            "user_id": 2,
+            "login": "operator",
+            "password_hash": "$argon2id$v=19$m=65536,t=4,p=1$DjXSj0PeExRGlbxW1qC\/sQ$GiAkogYUV+HPO4mQsLq0m1qAVPBhOz+qyBXFKBkK\/0A",
+            "role": "оператор",
+            "mfa_secret": "wu3EitoUuaPVS7bnZZxXog==",
+            "last_password_change": "2026-09-29",
+            "failed_attempts": 0,
+            "is_blocked": 0,
+            "is_deleted": 0,
+            "locked_until": null
+        },
+        {
+            "user_id": 3,
+            "login": "user",
+            "password_hash": "$argon2id$v=19$m=65536,t=4,p=1$RZ3Br9SvodxAowibAysOyA$6zsJILc\/s6GJLqY8LcToM0lDpIBBU1nViWLzpl0w+qE",
+            "role": "пользователь",
+            "mfa_secret": "MW\/LL93BsEetO4ElP\/SO3Q==",
+            "last_password_change": "2026-09-29",
+            "failed_attempts": 0,
+            "is_blocked": 0,
+            "is_deleted": 0,
+            "locked_until": null
+        },
+        {
+            "user_id": 11,
+            "login": "deleted_11_20261107",
+            "password_hash": "***",
+            "role": "пользователь",
+            "mfa_secret": "uPZzwT3mNRC4oo7zYos6ZQ==",
+            "last_password_change": "2026-11-07",
+            "failed_attempts": 0,
+            "is_blocked": 1,
+            "is_deleted": 1,
+            "locked_until": null
+        },
+        {
+            "user_id": 12,
+            "login": "deleted_12_20261110",
+            "password_hash": "$argon2id$v=19$m=65536,t=4,p=1$7IsLCGsJOcCZ9OGRq6GWpQ$wJv7HxxGhWplmmGEImJRXKEIWCFzg\/gCr9F2Xusitq8",
+            "role": "пользователь",
+            "mfa_secret": "BoJcWjNfgdyeD4riIkFR2A==",
+            "last_password_change": "2026-11-07",
+            "failed_attempts": 0,
+            "is_blocked": 1,
+            "is_deleted": 1,
+            "locked_until": null
+        }
+    ],
+    "action_log": [
+        {
+            "log_id": 67,
+            "action_time": "2026-10-14 11:25:07",
+            "user_id": 3,
+            "entity_name": "users",
+            "entity_id": 3,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\"}"
+        },
+        {
+            "log_id": 68,
+            "action_time": "2026-10-14 11:25:16",
+            "user_id": 3,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "update",
+            "before_json": "{\"user_id\":1,\"login\":\"admin\",\"password_hash\":\"***\",\"role\":\"оператор\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-09-29\",\"failed_attempts\":0,\"is_blocked\":0,\"locked_until\":null}",
+            "after_json": "{\"login\":\"admin\",\"role\":\"администратор\"}"
+        },
+        {
+            "log_id": 69,
+            "action_time": "2026-10-14 11:25:21",
+            "user_id": 3,
+            "entity_name": "users",
+            "entity_id": 3,
+            "action_type": "update",
+            "before_json": "{\"user_id\":3,\"login\":\"user\",\"password_hash\":\"***\",\"role\":\"администратор\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-09-29\",\"failed_attempts\":0,\"is_blocked\":0,\"locked_until\":null}",
+            "after_json": "{\"login\":\"user\",\"role\":\"пользователь\"}"
+        },
+        {
+            "log_id": 70,
+            "action_time": "2026-10-14 11:25:28",
+            "user_id": 3,
+            "entity_name": "users",
+            "entity_id": 3,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 71,
+            "action_time": "2026-10-14 11:25:41",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\"}"
+        },
+        {
+            "log_id": 72,
+            "action_time": "2026-10-14 11:26:11",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 73,
+            "action_time": "2026-10-14 11:26:50",
+            "user_id": 3,
+            "entity_name": "users",
+            "entity_id": 3,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\"}"
+        },
+        {
+            "log_id": 74,
+            "action_time": "2026-10-14 11:26:55",
+            "user_id": 3,
+            "entity_name": "users",
+            "entity_id": 3,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 75,
+            "action_time": "2026-10-14 11:27:46",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\"}"
+        },
+        {
+            "log_id": 76,
+            "action_time": "2026-10-14 11:34:00",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 3,
+            "action_type": "update",
+            "before_json": "{\"user_id\":3,\"login\":\"user\",\"password_hash\":\"***\",\"role\":\"пользователь\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-09-29\",\"failed_attempts\":0,\"is_blocked\":1,\"locked_until\":null}",
+            "after_json": "{\"is_blocked\":0,\"failed_attempts\":0,\"locked_until\":null}"
+        },
+        {
+            "log_id": 77,
+            "action_time": "2026-10-14 11:34:08",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 78,
+            "action_time": "2026-10-14 11:34:24",
+            "user_id": 3,
+            "entity_name": "users",
+            "entity_id": 3,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\"}"
+        },
+        {
+            "log_id": 79,
+            "action_time": "2026-10-14 11:34:27",
+            "user_id": 3,
+            "entity_name": "users",
+            "entity_id": 3,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 80,
+            "action_time": "2026-10-14 11:34:57",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\"}"
+        },
+        {
+            "log_id": 81,
+            "action_time": "2026-10-14 11:37:23",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 82,
+            "action_time": "2026-10-14 11:45:04",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\"}"
+        },
+        {
+            "log_id": 83,
+            "action_time": "2026-10-16 11:15:00",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\"}"
+        },
+        {
+            "log_id": 84,
+            "action_time": "2026-10-16 11:15:07",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\",\"kind\":\"report\"}"
+        },
+        {
+            "log_id": 85,
+            "action_time": "2026-10-16 11:16:34",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\",\"kind\":\"report\"}"
+        },
+        {
+            "log_id": 86,
+            "action_time": "2026-10-16 11:48:26",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 87,
+            "action_time": "2026-10-16 11:48:26",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\",\"kind\":\"report\"}"
+        },
+        {
+            "log_id": 88,
+            "action_time": "2026-10-16 11:49:33",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 89,
+            "action_time": "2026-10-16 11:49:33",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\",\"kind\":\"report\"}"
+        },
+        {
+            "log_id": 90,
+            "action_time": "2026-10-16 11:51:05",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 91,
+            "action_time": "2026-10-16 11:51:05",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\",\"kind\":\"report\"}"
+        },
+        {
+            "log_id": 92,
+            "action_time": "2026-10-16 11:51:22",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 93,
+            "action_time": "2026-10-16 11:51:22",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\",\"kind\":\"report\"}"
+        },
+        {
+            "log_id": 94,
+            "action_time": "2026-10-16 11:51:48",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 95,
+            "action_time": "2026-10-16 11:51:48",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\",\"kind\":\"report\"}"
+        },
+        {
+            "log_id": 96,
+            "action_time": "2026-10-16 11:51:53",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 97,
+            "action_time": "2026-10-16 11:51:53",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\",\"kind\":\"report\"}"
+        },
+        {
+            "log_id": 98,
+            "action_time": "2026-10-16 11:52:03",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 99,
+            "action_time": "2026-10-16 11:52:03",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\",\"kind\":\"report\"}"
+        },
+        {
+            "log_id": 100,
+            "action_time": "2026-10-16 11:56:19",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 101,
+            "action_time": "2026-10-16 11:56:19",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\",\"kind\":\"report\"}"
+        },
+        {
+            "log_id": 102,
+            "action_time": "2026-10-16 13:22:10",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"failed_password\",\"attempts_in_row\":1}"
+        },
+        {
+            "log_id": 103,
+            "action_time": "2026-10-16 13:23:54",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"failed_password\",\"attempts_in_row\":1}"
+        },
+        {
+            "log_id": 104,
+            "action_time": "2026-10-16 13:23:54",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 105,
+            "action_time": "2026-10-16 13:23:54",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\",\"kind\":\"report\"}"
+        },
+        {
+            "log_id": 106,
+            "action_time": "2026-10-16 13:23:54",
+            "user_id": 1,
+            "entity_name": "citizens",
+            "entity_id": 1,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\"}"
+        },
+        {
+            "log_id": 107,
+            "action_time": "2026-10-16 13:23:55",
+            "user_id": 1,
+            "entity_name": "passports",
+            "entity_id": 1,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\"}"
+        },
+        {
+            "log_id": 108,
+            "action_time": "2026-10-16 13:23:55",
+            "user_id": 1,
+            "entity_name": "citizens",
+            "entity_id": 1,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\"}"
+        },
+        {
+            "log_id": 109,
+            "action_time": "2026-10-16 13:28:36",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"failed_password\",\"attempts_in_row\":1}"
+        },
+        {
+            "log_id": 110,
+            "action_time": "2026-10-16 13:28:37",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 111,
+            "action_time": "2026-10-16 13:28:37",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\",\"kind\":\"report\"}"
+        },
+        {
+            "log_id": 112,
+            "action_time": "2026-10-16 13:28:37",
+            "user_id": 1,
+            "entity_name": "citizens",
+            "entity_id": 1,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\"}"
+        },
+        {
+            "log_id": 113,
+            "action_time": "2026-10-16 13:28:37",
+            "user_id": 1,
+            "entity_name": "passports",
+            "entity_id": 1,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\"}"
+        },
+        {
+            "log_id": 114,
+            "action_time": "2026-10-16 13:28:37",
+            "user_id": 1,
+            "entity_name": "citizens",
+            "entity_id": 1,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\"}"
+        },
+        {
+            "log_id": 115,
+            "action_time": "2026-10-16 13:40:41",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\",\"kind\":\"report\"}"
+        },
+        {
+            "log_id": 116,
+            "action_time": "2026-10-16 13:41:18",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 117,
+            "action_time": "2026-10-16 13:41:38",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 118,
+            "action_time": "2026-10-16 13:52:04",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 119,
+            "action_time": "2026-10-16 13:52:26",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 120,
+            "action_time": "2026-10-16 13:53:05",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 2,
+            "action_type": "update",
+            "before_json": "{\"application_id\":2,\"citizen_id\":1,\"operator_id\":2,\"service_type\":\"Выдача паспорта\",\"status\":\"подано\",\"created_at\":\"2026-10-06 10:27:31\",\"updated_at\":null}",
+            "after_json": "{\"status\":\"в работе\"}"
+        },
+        {
+            "log_id": 121,
+            "action_time": "2026-10-16 13:53:09",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 2,
+            "action_type": "update",
+            "before_json": "{\"application_id\":2,\"citizen_id\":1,\"operator_id\":2,\"service_type\":\"Выдача паспорта\",\"status\":\"в работе\",\"created_at\":\"2026-10-06 10:27:31\",\"updated_at\":\"2026-10-16 13:53:05\"}",
+            "after_json": "{\"status\":\"подано\"}"
+        },
+        {
+            "log_id": 122,
+            "action_time": "2026-10-16 13:58:25",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 123,
+            "action_time": "2026-10-16 13:58:25",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\",\"kind\":\"report\"}"
+        },
+        {
+            "log_id": 124,
+            "action_time": "2026-10-16 14:14:33",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 125,
+            "action_time": "2026-10-16 14:14:34",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "{\"format\":\"pdf\",\"kind\":\"report\"}"
+        },
+        {
+            "log_id": 126,
+            "action_time": "2026-10-16 14:16:26",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 127,
+            "action_time": "2026-10-16 14:16:46",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 128,
+            "action_time": "2026-10-16 14:17:04",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 129,
+            "action_time": "2026-10-20 09:06:10",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 130,
+            "action_time": "2026-10-20 09:06:22",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 131,
+            "action_time": "2026-11-06 14:33:19",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 132,
+            "action_time": "2026-11-06 14:43:03",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 133,
+            "action_time": "2026-11-06 14:43:34",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 134,
+            "action_time": "2026-11-06 14:43:53",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 135,
+            "action_time": "2026-11-07 09:15:50",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 136,
+            "action_time": "2026-11-07 09:17:51",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 137,
+            "action_time": "2026-11-07 09:18:23",
+            "user_id": 11,
+            "entity_name": "users",
+            "entity_id": 11,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "{\"login\":\"Ivn\",\"role\":\"пользователь\"}"
+        },
+        {
+            "log_id": 138,
+            "action_time": "2026-11-07 09:18:42",
+            "user_id": 11,
+            "entity_name": "users",
+            "entity_id": 11,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 139,
+            "action_time": "2026-11-07 09:19:55",
+            "user_id": 11,
+            "entity_name": "users",
+            "entity_id": 11,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 140,
+            "action_time": "2026-11-07 09:20:28",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 141,
+            "action_time": "2026-11-07 09:23:22",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 4,
+            "action_type": "update",
+            "before_json": "{\"user_id\":4,\"login\":\"ivan\",\"password_hash\":\"***\",\"role\":\"пользователь\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-10-09\",\"failed_attempts\":0,\"is_blocked\":0,\"locked_until\":null}",
+            "after_json": "{\"login\":\"ivan\",\"role\":\"оператор\",\"is_blocked\":0,\"locked_until\":null}"
+        },
+        {
+            "log_id": 142,
+            "action_time": "2026-11-07 09:41:10",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 4,
+            "action_type": "delete",
+            "before_json": "{\"user_id\":4,\"login\":\"ivan\",\"password_hash\":\"***\",\"role\":\"оператор\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-11-07\",\"failed_attempts\":0,\"is_blocked\":0,\"locked_until\":null}",
+            "after_json": null
+        },
+        {
+            "log_id": 143,
+            "action_time": "2026-11-07 09:41:29",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 4,
+            "action_type": "restore",
+            "before_json": null,
+            "after_json": "{\"user_id\":4,\"login\":\"ivan\",\"password_hash\":\"***\",\"role\":\"оператор\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-11-07\",\"failed_attempts\":0,\"is_blocked\":0,\"locked_until\":null}"
+        },
+        {
+            "log_id": 144,
+            "action_time": "2026-11-07 09:41:36",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 4,
+            "action_type": "delete",
+            "before_json": "{\"user_id\":4,\"login\":\"ivan\",\"password_hash\":\"***\",\"role\":\"оператор\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-11-07\",\"failed_attempts\":0,\"is_blocked\":0,\"locked_until\":null}",
+            "after_json": null
+        },
+        {
+            "log_id": 145,
+            "action_time": "2026-11-07 09:47:33",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 4,
+            "action_type": "restore",
+            "before_json": null,
+            "after_json": "{\"user_id\":4,\"login\":\"ivan\",\"password_hash\":\"***\",\"role\":\"оператор\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-11-07\",\"failed_attempts\":0,\"is_blocked\":0,\"locked_until\":null}"
+        },
+        {
+            "log_id": 146,
+            "action_time": "2026-11-07 09:48:38",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 4,
+            "action_type": "delete",
+            "before_json": "{\"user_id\":4,\"login\":\"ivan\",\"password_hash\":\"***\",\"role\":\"оператор\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-11-07\",\"failed_attempts\":0,\"is_blocked\":0,\"locked_until\":null}",
+            "after_json": null
+        },
+        {
+            "log_id": 147,
+            "action_time": "2026-11-07 09:48:42",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 4,
+            "action_type": "restore",
+            "before_json": null,
+            "after_json": "{\"user_id\":4,\"login\":\"ivan\",\"password_hash\":\"***\",\"role\":\"оператор\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-11-07\",\"failed_attempts\":0,\"is_blocked\":0,\"locked_until\":null}"
+        },
+        {
+            "log_id": 148,
+            "action_time": "2026-11-07 10:21:11",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 4,
+            "action_type": "delete",
+            "before_json": "{\"user_id\":4,\"login\":\"ivan\",\"password_hash\":\"***\",\"role\":\"оператор\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-11-07\",\"failed_attempts\":0,\"is_blocked\":0,\"locked_until\":null}",
+            "after_json": null
+        },
+        {
+            "log_id": 149,
+            "action_time": "2026-11-07 10:27:50",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 150,
+            "action_time": "2026-11-07 10:28:30",
+            "user_id": 12,
+            "entity_name": "users",
+            "entity_id": 12,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "{\"login\":\"ivan\",\"role\":\"пользователь\"}"
+        },
+        {
+            "log_id": 151,
+            "action_time": "2026-11-07 10:28:49",
+            "user_id": 12,
+            "entity_name": "users",
+            "entity_id": 12,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 152,
+            "action_time": "2026-11-07 10:28:56",
+            "user_id": 12,
+            "entity_name": "users",
+            "entity_id": 12,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 153,
+            "action_time": "2026-11-07 10:29:15",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 154,
+            "action_time": "2026-11-07 10:29:24",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 12,
+            "action_type": "delete",
+            "before_json": "{\"user_id\":12,\"login\":\"ivan\",\"password_hash\":\"***\",\"role\":\"пользователь\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-11-07\",\"failed_attempts\":0,\"is_blocked\":0,\"is_deleted\":0,\"locked_until\":null}",
+            "after_json": "{\"is_deleted\":1}"
+        },
+        {
+            "log_id": 155,
+            "action_time": "2026-11-07 10:29:27",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 156,
+            "action_time": "2026-11-07 10:35:57",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 157,
+            "action_time": "2026-11-07 10:37:08",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 158,
+            "action_time": "2026-11-07 10:37:49",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "{\"result\":\"ok\",\"factor\":\"2fa\"}"
+        },
+        {
+            "log_id": 159,
+            "action_time": "2026-11-07 10:38:10",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 11,
+            "action_type": "delete",
+            "before_json": "{\"user_id\":11,\"login\":\"Ivn\",\"password_hash\":\"***\",\"role\":\"пользователь\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-11-07\",\"failed_attempts\":0,\"is_blocked\":0,\"is_deleted\":0,\"locked_until\":null}",
+            "after_json": "{\"is_deleted\":1}"
+        },
+        {
+            "log_id": 160,
+            "action_time": "2026-11-07 10:38:29",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 11,
+            "action_type": "restore",
+            "before_json": null,
+            "after_json": "{\"user_id\":11,\"login\":\"Ivn\",\"password_hash\":\"***\",\"role\":\"пользователь\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-11-07\",\"failed_attempts\":0,\"is_blocked\":0,\"is_deleted\":0,\"locked_until\":null}"
+        },
+        {
+            "log_id": 161,
+            "action_time": "2026-11-07 10:51:27",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "update",
+            "before_json": null,
+            "after_json": "{\"tool\":\"admin_sql_console\",\"statements\":1,\"sql\":\"UPDATE users SET mfa_secret = TO_BASE64(RANDOM_BYTES(16)) WHERE password_hash = '***';\"}"
+        },
+        {
+            "log_id": 162,
+            "action_time": "2026-11-07 10:59:51",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 11,
+            "action_type": "restore",
+            "before_json": null,
+            "after_json": "{\"user_id\":11,\"login\":\"Ivn\",\"password_hash\":\"***\",\"role\":\"пользователь\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-11-07\",\"failed_attempts\":0,\"is_blocked\":0,\"is_deleted\":0,\"locked_until\":null}"
+        },
+        {
+            "log_id": 163,
+            "action_time": "2026-11-07 11:00:25",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 12,
+            "action_type": "restore",
+            "before_json": null,
+            "after_json": "{\"user_id\":12,\"login\":\"ivan\",\"password_hash\":\"***\",\"role\":\"пользователь\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-11-07\",\"failed_attempts\":0,\"is_blocked\":0,\"is_deleted\":0,\"locked_until\":null}"
+        },
+        {
+            "log_id": 164,
+            "action_time": "2026-11-07 11:00:38",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 12,
+            "action_type": "delete",
+            "before_json": "{\"user_id\":12,\"login\":\"ivan\",\"password_hash\":\"***\",\"role\":\"пользователь\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-11-07\",\"failed_attempts\":0,\"is_blocked\":0,\"is_deleted\":0,\"locked_until\":null}",
+            "after_json": "{\"is_deleted\":1,\"is_blocked\":1,\"login\":\"deleted_12_20261107\"}"
+        },
+        {
+            "log_id": 165,
+            "action_time": "2026-11-07 11:01:02",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 12,
+            "action_type": "restore",
+            "before_json": null,
+            "after_json": "{\"user_id\":12,\"login\":\"ivan\",\"password_hash\":\"***\",\"role\":\"пользователь\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-11-07\",\"failed_attempts\":0,\"is_blocked\":0,\"is_deleted\":0,\"locked_until\":null}"
+        },
+        {
+            "log_id": 166,
+            "action_time": "2026-11-07 11:01:15",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 11,
+            "action_type": "delete",
+            "before_json": "{\"user_id\":11,\"login\":\"Ivn\",\"password_hash\":\"***\",\"role\":\"пользователь\",\"mfa_secret\":\"***\",\"last_password_change\":\"2026-11-07\",\"failed_attempts\":0,\"is_blocked\":0,\"is_deleted\":0,\"locked_until\":null}",
+            "after_json": "{\"is_deleted\":1,\"is_blocked\":1,\"login\":\"deleted_11_20261107\"}"
+        },
+        {
+            "log_id": 167,
+            "action_time": "2026-11-07 12:10:18",
+            "user_id": 1,
+            "entity_name": "action_log",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "\"enc1:9w7HAZoyfFldN5JGN0+\\\/EBPdmmPySzAfi00Me+fQ2zc\\\/GPZ4PiNjtmcWzDrVDhNBPhwsIg5c5YuRqzc1UbcTAXzBDxe9\""
+        },
+        {
+            "log_id": 168,
+            "action_time": "2026-11-10 09:51:42",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "\"enc1:QTWKz5JvgzWL8bGzbW58uSu3XPW90mX7Paqa40ozS6b1yethATeTxHcrBuRZDBMdKtOtdkH2MOR3xg==\""
+        },
+        {
+            "log_id": 169,
+            "action_time": "2026-11-10 09:51:51",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 12,
+            "action_type": "delete",
+            "before_json": "\"enc1:tlwP2O8pSX8H6H8uRRIoAmCdVXUOJwN06YzuP2v566GHdBrzWAeBAuI+b+HanNbPzuLYnXyLbm27UE9J+FCSB9r4kvdss++gYl6URGBs88hu+QO2AYqtemw0dskYpJ8\\\/jqJOwvutQMA+OgYB5Xm7janFR40MTsYeC8IB1DrVTulLojuW+w7StdyYRk5y8CGiuYj4epLnCmmzkQb4l3NRcOOP+SmM4g3jYLvkIQFppvgbGx1As48STzIa38U\\\/LfmqOnL7+Ksv6Myz8gOfAzab9kvyzNbnUET8oL53Afax4\\\/7OYKZX\\\/1YDRqCVY+899w==\"",
+            "after_json": "\"enc1:8xZpE570Gd\\\/C4nGot7YyaPzNdZk9J9QxhJ48DyJe\\\/9phtc8IuYExqqshUuHsvq1ghifuXzIkJslUsVf+BbcZWqkhTkvyIST65Vez03PIzBc5xTqPfzDXtPI=\""
+        },
+        {
+            "log_id": 170,
+            "action_time": "2026-11-10 09:52:04",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 171,
+            "action_time": "2026-11-10 09:53:26",
+            "user_id": 3,
+            "entity_name": "users",
+            "entity_id": 3,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "\"enc1:viK8nC+41oxwIw5uUShupg\\\/5JreS27miu0iELJhdaEe3mF9mEaOVWkLaEgXLbx9VcdsybK3TknkO2Q==\""
+        },
+        {
+            "log_id": 172,
+            "action_time": "2026-11-10 09:56:40",
+            "user_id": 3,
+            "entity_name": "users",
+            "entity_id": 3,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 173,
+            "action_time": "2026-11-10 09:57:02",
+            "user_id": 2,
+            "entity_name": "users",
+            "entity_id": 2,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "\"enc1:8KvHCKCX+lRHTS\\\/iNop9rTTZQfsBunk0oWtsz+MOzh\\\/WmtQ18N1o8vKqqmsfAN8vh3KaEbyehPQU+w==\""
+        },
+        {
+            "log_id": 174,
+            "action_time": "2026-11-10 10:00:21",
+            "user_id": 2,
+            "entity_name": "applications",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "\"enc1:qthvHqxTYdSjqgz9NVo+EKFDaj63B1JkNRwv5dWFgnI\\\/nvbbpi44UXdebVBFdCdkzWB9cr8rWMzZ5vAp\""
+        },
+        {
+            "log_id": 175,
+            "action_time": "2026-11-10 10:06:45",
+            "user_id": 2,
+            "entity_name": "action_log",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "\"enc1:NmYsAYjH90GypMbSbNl4DVIo23UBhml2FnOzz8EuM8lZU4LF4pbUgpYXRy34FEitgZiVPymLymQ77O148zf+FQ2NYrLf\""
+        },
+        {
+            "log_id": 176,
+            "action_time": "2026-11-10 10:09:30",
+            "user_id": 2,
+            "entity_name": "citizens",
+            "entity_id": 4,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "{\"last_name\": \"Ггг\", \"first_name\": \"Гг\", \"reg_status\": \"активна\"}"
+        },
+        {
+            "log_id": 177,
+            "action_time": "2026-11-10 10:09:30",
+            "user_id": 2,
+            "entity_name": "applications",
+            "entity_id": 3,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "{\"service_type\": \"Регистрация гражданина\", \"status\": \"завершено\"}"
+        },
+        {
+            "log_id": 178,
+            "action_time": "2026-11-10 10:22:18",
+            "user_id": 2,
+            "entity_name": "passports",
+            "entity_id": 2,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "\"enc1:ACEi3Pgo0PAHnm6gB3A1D1ubMpZokf1kV5wLTeZEPH+1J3V7jesS5VzKYAhbNqBl8B+ji16WSxcHRsRTlTbQK27tABY2jEaZs\\\/hHYJzNkHKlJHJAIqDs4aaWS+8XrccmArwBwhvnxx3E0DM6JOD34nyhwYvhm5T5KEPyB5ofR4wl3jNxli64g+ujTJbOeDh5Dd+Tb\\\/FpikRYcnSZ58Ht14yL1jJSC6nKaSS4rCibCgNsFoWy+zZM3J3LnBlC7aXKHcXyhnZPqBHFiO8=\""
+        },
+        {
+            "log_id": 179,
+            "action_time": "2026-11-10 10:24:34",
+            "user_id": 2,
+            "entity_name": "citizens",
+            "entity_id": 5,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "{\"last_name\": \"ГГГГ\", \"first_name\": \"ДД\", \"reg_status\": \"активна\"}"
+        },
+        {
+            "log_id": 180,
+            "action_time": "2026-11-10 10:24:34",
+            "user_id": 2,
+            "entity_name": "applications",
+            "entity_id": 4,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "{\"service_type\": \"Регистрация гражданина\", \"status\": \"завершено\"}"
+        },
+        {
+            "log_id": 181,
+            "action_time": "2026-11-10 10:44:52",
+            "user_id": 2,
+            "entity_name": "citizens",
+            "entity_id": 5,
+            "action_type": "delete",
+            "before_json": "\"enc1:BhCrHwon9aSVu7hZPRLt1eARmanma5EGLTZY3CPqVEjO46u+BQllCYF3AQaSvzxvudavxDu5bBfyiokfDTxO0ZhS9kp23Kys0b0MuolLqYIB\\\/ggWBcogAITUnM5oIIPoJ\\\/ANT8scc56IjHVnYxjVeQZoAySElnwhNEtFkMjFIwiXUozs674TuOHqJOXzANLTLp+rddVgV\\\/kbWrzDQ2KvoR76hy6A0NHEQa6kCvK2OtSLyv2+8IIzubnKGDEAfBlwAVPDxral5JX2iqptcWApQ79uvgKwU2Jrsg2sykXDU\\\/Lu7t7ZL1LtPAmTvteLheyQUrUVVQ3AkDLgAqIghhe0iOAxke9fo0ZVY+s+tdzzwU+Vry9B\"",
+            "after_json": null
+        },
+        {
+            "log_id": 182,
+            "action_time": "2026-11-10 10:44:56",
+            "user_id": 2,
+            "entity_name": "citizens",
+            "entity_id": 4,
+            "action_type": "delete",
+            "before_json": "\"enc1:5SPBFNATY4rwnrdSeGUW4XL2NOAZ9HQrD4TDLTflTwOpzE+n8z9OY+aIt4SE+uS7yJ4dXvE0Y4vtgnY4hS3gGCFw2hGTGThc\\\/ElrZY3Uczpzwd6NYwXI6ZJXx+jKfSe56f6MRSjZZVL5uEdMkw00UP3E6b2YOxcdY8ZcCib+uocCa6rzd\\\/a2JGxGUlZcSPPWNummkI3OXAw5llogY0Vo59rjgijJE24ZpAwazcpmP0dL8C5UthhOi745EY8cAUVoiPr5YnD2Af3M9V4sZ\\\/DYgTMGR50F+8mx0aCAEEhmlwkYqjTl\\\/aXbsPVHQxsRY+jlE+kc\\\/rUJrcnr8NgWetVTLm6bEQvqa3rkkQM6r5nxnf8=\"",
+            "after_json": null
+        },
+        {
+            "log_id": 183,
+            "action_time": "2026-11-10 10:47:02",
+            "user_id": 2,
+            "entity_name": "citizens",
+            "entity_id": 6,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "\"enc1:BpRssqtRYYbRp5ZjHtt104axsHv+isP8T1RvZeXtUT9wFWJZpTL8L7wnKipNF3WvtUgaAFnX6YM3zlXbzhVyv49muZR5kObNFsv8\\\/f5MkwZ9\\\/F16o+MmDBA3UNvJNu+8+jONQ249LncbRdWX8\\\/G6APiGZowTdFCO8OZVA7VrUNbUSwhYlxuiuyFM\\\/NFbNNUaioqJjtaFLOd3mCIvnAUKj6yvjaAVWCudAVWKBjLCVwXx9riGZ7ntpjNNHDg0ynnbzwqHok8d+O2tA70sHc1LTN\\\/hnSrGKNBvoN6ifR+VnmADjtKHC8mHejUPrAChJHL68XEub2CI02lGBepvPRApFbw=\""
+        },
+        {
+            "log_id": 184,
+            "action_time": "2026-11-10 10:47:57",
+            "user_id": 2,
+            "entity_name": "passports",
+            "entity_id": 3,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "\"enc1:xqLoKfmFLCOSF3z0DbU2227KmCWXWQYsrZPuHJupiYUxEr69n5JEZhWzqoXI2YQ9RH18XFjPvAWuw1RlvdC30hiYQ4ue666SDc0mDY3PSixvaYBbRCkpwvqOZoYXmLtoLSxP90xVpbP1eb1f6RqU6cSTHsaXnBw+K22nRbNdyrDXI8lhQjnVydysk+9JOw792X4TCKkhrZh7UmWOjl9e16+K78RCyM3aCtvCZcZ97ODfta0=\""
+        },
+        {
+            "log_id": 185,
+            "action_time": "2026-11-10 10:51:47",
+            "user_id": 2,
+            "entity_name": "citizens",
+            "entity_id": 7,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "\"enc1:8mQkNVr3pBRoX4GwwLKiNzUxMGub682YL9Rq4ELx6qyjS7ZhAi7EOUu9X6PPDLQyO2NMP18KIYS+maYWu8HoNHTKbaLf+mFh3Ff1qDZdVu+3Vy+krER1VTiAYgOYinNaxgNYnoyCzOE=\""
+        },
+        {
+            "log_id": 186,
+            "action_time": "2026-11-10 10:51:47",
+            "user_id": 2,
+            "entity_name": "applications",
+            "entity_id": 185,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "\"enc1:JFosT43X7VtjTPrp58gQsHryhgfTG5eJlaXM6XZ34\\\/cChrAGiyx3MzDbiY7spw1SO1fUwN1Bg9uFln8A5vx5Pf\\\/KbpUP48LQCHYgoGMPLGaAo5qwxoa66rZ7aEaMICZ+ZRrge0yQN5nxNHGaSQ6zG9eL3Onx+2Up\""
+        },
+        {
+            "log_id": 187,
+            "action_time": "2026-11-10 10:53:14",
+            "user_id": 2,
+            "entity_name": "applications",
+            "entity_id": 6,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "\"enc1:h0O9VsC3SwcGV8etypXBKmKAm6fI5ZJuoL9YS5QO0kg\\\/NCnWZcgkpmvs72KHlpowwQKy2xSraZ4puciH9SM83YL3umYL2PIMN2ZFpfKEWTCo4E7oAV\\\/cuql+Z0N38AgHrLXkh9r\\\/FMjr5g==\""
+        },
+        {
+            "log_id": 188,
+            "action_time": "2026-11-10 10:53:14",
+            "user_id": 2,
+            "entity_name": "passports",
+            "entity_id": 4,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "\"enc1:SjjKCmhcQhiFvbim2uD0GRNER5S2mA23il0+UMWL6+aPbIK7Ty7ZJMa014ZqLtfr3vu\\\/OQaMnmV+4IIiPMuX7HoKdQV3HYorYktqiSJuiQqaOIOzL86\\\/jCXD5vgB\""
+        },
+        {
+            "log_id": 189,
+            "action_time": "2026-11-10 10:53:17",
+            "user_id": 2,
+            "entity_name": "passports",
+            "entity_id": 4,
+            "action_type": "read",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 190,
+            "action_time": "2026-11-10 10:53:39",
+            "user_id": 2,
+            "entity_name": "citizens",
+            "entity_id": 7,
+            "action_type": "delete",
+            "before_json": "\"enc1:QbQP8fXcxq4Xjst69P7ketPpa2TpN2gLmys5UoLUyPXXBCiS+34Ezy6Xb2vuaiZMU\\\/1p8VxOCEPcEE2zfv50UcBYzuiTeIAf\\\/\\\/ieYeFwN+72XwHJc5uQg+OA+XjbwZ+ftqWCwEpBF6GjWY1VPyH5GQ5H0rzUsmBNMAG2d+arTpuJeBDMfEDnEH6YNRBpsxnh3O86\\\/sJ4p7bzx62wEjcOJFyFvY3zxyD53whaOgTeNtddNh74WxwxVmsnTuVdXCwa+2NllQjCIwUA2wcfCYZqVYv7fY29+eundWdZFifsPXAA1UvCFqv7+KeAIu2gAzYxZZqYz0e4URfiIUAiJV3OOi+gy6KN8s6XWUF3dVwJyCEQdRKU\"",
+            "after_json": null
+        },
+        {
+            "log_id": 191,
+            "action_time": "2026-11-10 10:53:42",
+            "user_id": 2,
+            "entity_name": "citizens",
+            "entity_id": 6,
+            "action_type": "delete",
+            "before_json": "\"enc1:dye7QtYmzd\\\/5SHKDdBqKxv7B+DTM12qwxl3ARhu5+AjgiiyBYq\\\/1oHQoh0vBT3\\\/jz33nOTwbXH4WEatInMV5AQAg27+RtO0qbpdIzrBsqWfygE9tNaEukgJOegqR5t3qBSq7KeD2BUyzya2Kg+4kVjLfQXPNBs6igE8b+vUILmJ6QjWnpkZ+trubXQrGS7TL++iJ0a1aFDTFpdtYQiha6HBE7ETLpULgnABx6nG\\\/oUlvXPcjYe\\\/s+0xNeJ6zv4uoFyaGNlwl8uwEZTPhV3GmXTwg+90QKaHqusl9\\\/ywaqBmBdxEXSBemx9XvHCVo8ZjjjvKNOqcUa+BWF5joY2dYtrJrEjuvlQqULYbL\\\/b5i5ug=\"",
+            "after_json": null
+        },
+        {
+            "log_id": 192,
+            "action_time": "2026-11-10 10:55:03",
+            "user_id": 2,
+            "entity_name": "users",
+            "entity_id": 2,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 193,
+            "action_time": "2026-11-10 10:55:21",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "\"enc1:tstBo+TW811Rei\\\/zScre5Vz7y3FILHA14GW0ylC9RjVyvUNEC7YanSObOAXC5ID7vbCBPjBftyTSfg==\""
+        },
+        {
+            "log_id": 194,
+            "action_time": "2026-11-10 10:56:05",
+            "user_id": 1,
+            "entity_name": "action_log",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "\"enc1:bnRZ1yOiCP\\\/tCiNp02IE\\\/iVcGt+qn\\\/W+QV2H2ugSXrTp9Ta79mov1Df8MuvQqAm5tDxnh\\\/eIjTeHDjnJuav0s1WTw10DTp758\\\/i4ZqfEsw==\""
+        },
+        {
+            "log_id": 195,
+            "action_time": "2026-11-10 11:04:02",
+            "user_id": 1,
+            "entity_name": "citizens",
+            "entity_id": 8,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "\"enc1:Ok3j8Y8stS1LSFII\\\/IidaRSBpK1Zpbog5i+x8o6XqX7jLOWWqvglc8qB+7NMoZHMT\\\/EmEJTDGpRyeEYtBxlmbqRP638GEl2HZwkv7MkJO3D53L+PGfcohoD8A4Z3futvbxtU9m2aw89vV3cJONpeQ0Q1NrfDAKGdxgK4Q4MwQbXpfUHuutl8g5tEuh0uUZnLsENB2NzPcpkZUHhXT4gjMVNJ7JXGu5jo8kNSR9sp5ceoCpd9KwKJFs7Kh68OD60QhrL666HeqWVABLKNm3tfFHNHznvZHA8IcIneVOgJoPTdXCJPGIQ8GJ5rFAUeARv8ZxFc5xZOgiz3QHXumg==\""
+        },
+        {
+            "log_id": 196,
+            "action_time": "2026-11-10 11:04:58",
+            "user_id": 1,
+            "entity_name": "citizens",
+            "entity_id": 9,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "\"enc1:E3RsfpA6709VcA3Jjlh8aXS87bnoCdkn4PJ3dRhKGR+Jw+3UKcBZn4Z97i3p9NkJgcLYGeWV4XbZMt88TvxbkaqIjNI9RCark\\\/UIzoCaqhhCYV+mKeIEhdueoLAQLu2AplGFuzfTl2mU\""
+        },
+        {
+            "log_id": 197,
+            "action_time": "2026-11-10 11:04:58",
+            "user_id": 1,
+            "entity_name": "applications",
+            "entity_id": 196,
+            "action_type": "create",
+            "before_json": null,
+            "after_json": "\"enc1:QNdcW0ni2vzU4Mae5KZ3ZA5jGSlWXEz34kAEbcfXDW6gR8z\\\/obIGYtTM68WAoP67y6v8GIgKRHmA\\\/dFBsu2L9BC2iURObGvQpvkuElrRE7BfSl0DyF5IhSfE3oSDSUYqfZKfR6GH08JAszGgdqeWa5XeGBiIVKaT\""
+        },
+        {
+            "log_id": 198,
+            "action_time": "2026-11-10 11:08:24",
+            "user_id": 1,
+            "entity_name": "citizens",
+            "entity_id": 9,
+            "action_type": "delete",
+            "before_json": "\"enc1:IrkFeEexMC4UWUtR4R6dQs+iqkU\\\/W2AfJ0gkh3CbqXqpSH\\\/2lrfemq7fMAqD1sdmDAZD0Ga9YBOEyN2AEJ5DMxw\\\/Oeficquv+2qXeb8VovIsFI03TYE5tTXr0UVGnuvoaxWjhFaXmKSWLjNYTRGF8IXmrBhA6qkIl6VN21WWILBtBPkvrvBFdn4ETc\\\/f6tF4wNnsall00\\\/JGE76o5VWM\\\/PypoTwLDiJR3Rs6mq40kDlQITGoLIFMJbHhzz\\\/YPhSIT\\\/TlfJH7xFarhbjRI4tpXgDIlp8FysTgtyGvvF60u+5Kl8ZyG8KcAdiX8++0RUgLkt9T+aBBPNkUyZ0pYRU7sw8RtjxR9PaNmKinVZW2vQ==\"",
+            "after_json": null
+        },
+        {
+            "log_id": 199,
+            "action_time": "2026-11-10 11:08:26",
+            "user_id": 1,
+            "entity_name": "citizens",
+            "entity_id": 8,
+            "action_type": "delete",
+            "before_json": "\"enc1:NAPCBE9Z5cr7bJshZcduai5AeI\\\/zSzpKy8v6\\\/+MHiT2OfkBuvUaUwwG\\\/0TLCoDps1BMyARDiaRTBzK+b2mpzPhaeveJWlpc3KCmAHqqvtxFiv3xmCJP7xT7bs+eo+FZ3V1zKV14t3LvM0zbmV4wNZiVU9YrqhgvpYgaRKr6FAa1VqGYA4I6jGOkfX5r1TBfpqRAewNLONmrJYcVii3xkqcaOUxdF0zONXEsq+Lfgia6ftfkVjPK49cOgdpyWYvcxlhTOAxE03ioyl98MZQ9z4t8X5oyuzrNog7ZDqEzLFVZjB9TtvU+os1vubZX2xhTxIUya5jOt6cqAxRMtiFIKFwGXtPoY3IiCwriqNQ==\"",
+            "after_json": null
+        },
+        {
+            "log_id": 200,
+            "action_time": "2026-11-10 11:11:27",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 201,
+            "action_time": "2026-11-10 11:13:24",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "\"enc1:tsQKKjWj+EDeuF50Z\\\/7Xj9YlsO4a\\\/lbi\\\/uY\\\/U8KwgwuEYZbs47xmIVBSL\\\/oDUUssA1D009rpksrB4A==\""
+        },
+        {
+            "log_id": 202,
+            "action_time": "2026-11-10 12:11:02",
+            "user_id": 1,
+            "entity_name": "action_log",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "\"enc1:lFky98\\\/cME4W+khT0S9j3SCsVUfRRacHlhogfbPd6UQ+7Cxo+ip2LawcD+jHkiKoY6jt8avdUgFa\\\/kLU6XpJFx4ddkaYyRe4iPfGsNQhgw==\""
+        },
+        {
+            "log_id": 203,
+            "action_time": "2026-11-11 11:09:08",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "\"enc1:\\\/9k6ZO4JTScWLEt9S2BuiSF0Z6ZcTbnUvb\\\/dWUnWl9LasDs+JZyWznuW2ZRBi3jDrGSLpGlHRecuGQ==\""
+        },
+        {
+            "log_id": 204,
+            "action_time": "2026-11-11 11:09:12",
+            "user_id": 1,
+            "entity_name": "action_log",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "\"enc1:2MHtEb0+HvS65G572zuBPXYgRFH4jR7PFEa1HBXBUcoaUVAwMBtPBvAK2B27Ymxa\\\/Xv4kw8o+X2XDPdieyk\\\/1PfdJkieROOnB9rCZgnBZQ==\""
+        },
+        {
+            "log_id": 205,
+            "action_time": "2026-11-11 11:24:24",
+            "user_id": 1,
+            "entity_name": "action_log",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "\"enc1:t+VhRwvw8HuGO4run77FkrNzuw8FTPiPtjNL+BZp8y3XaBpKS0F6sMRWdSdKUH250VYHv6q8R\\\/\\\/M0PUjRN4Bw3zamtFfGxq0ODpwb+CvYA==\""
+        },
+        {
+            "log_id": 206,
+            "action_time": "2026-11-11 11:28:50",
+            "user_id": 1,
+            "entity_name": "action_log",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "\"enc1:EB1ErO08NF5IiIdusYiWjEGHRR2EewatpmbfL2+hyIv9ooE+RymSE++bY1G2EZcHwHAGv\\\/L2HCwDH63J\\\/ZbRnwSnfy176aAquCv2VE2XhA==\""
+        },
+        {
+            "log_id": 207,
+            "action_time": "2026-11-11 11:37:46",
+            "user_id": 1,
+            "entity_name": "action_log",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "\"enc1:\\\/fGoCso+7oXmWUGF75ppWQA8GpQYgEEdlAe5wfH8RcwjV1tgocc4UIWZt5AKNJ97YyCZzDycjFxwkuGzZHxP7mQOtu3Npx1cpX8kRQ5iwmjUeOxM6T9IJU96\\\/0BOCBp4GA\\\/0DADPcwC8\""
+        },
+        {
+            "log_id": 208,
+            "action_time": "2026-11-11 11:38:24",
+            "user_id": 1,
+            "entity_name": "action_log",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "\"enc1:G1xsmAeZGXplLglAfb5lNCDBQ74ognXl9iiMictw15wB8H2t2pdaP0XWJcx+xd7tPMBanUs9mQDtou+9tCSEbPPId2\\\/BuP0WSQtWiLBm5pfGckqITvgsvhiD+V\\\/ePveLsRwwMBi9xhb+\""
+        },
+        {
+            "log_id": 209,
+            "action_time": "2026-11-11 11:49:34",
+            "user_id": 1,
+            "entity_name": "action_log",
+            "entity_id": 0,
+            "action_type": "export",
+            "before_json": null,
+            "after_json": "\"enc1:PVQdpubT+W6OicZOUTOp0oNnzzYTMZF+dJhiRbGlZwJZFUU5t459bw2MPqjFf3UUkkVBDHaY5qUYz7LhmXcaKAG8udDs\\\/6UkN8I+wlui6W\\\/6iNs1w6TH7wVSe9Cu\\\/688uldN\\\/bUpvn2oMdDM\\\/jVrpbnxK2cFfJHzv1xjBVLAJoH5zTxyphcqV6Yiv\\\/SlbYE=\""
+        },
+        {
+            "log_id": 210,
+            "action_time": "2026-11-11 11:53:42",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 211,
+            "action_time": "2026-11-11 11:54:02",
+            "user_id": 2,
+            "entity_name": "users",
+            "entity_id": 2,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "\"enc1:MJbP14gkgFDzhN0pOPzd3urDCIg6AVFKVMTbB5dms\\\/GtFDj1b\\\/KqP4ubrZtxDzWt0wsyIds0d\\\/p9bw==\""
+        },
+        {
+            "log_id": 212,
+            "action_time": "2026-11-12 13:02:35",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "\"enc1:qNuAYn+Sqdt0LMYZEoBGoiN3Ej++uH17oAznlRJUfapoAqdRpWkUYScOdVoI3llDu55cLF08SdO6Fg==\""
+        },
+        {
+            "log_id": 213,
+            "action_time": "2026-11-12 13:02:39",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 214,
+            "action_time": "2026-11-12 13:15:22",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "\"enc1:jc6xS8zIgNFe7zYPSVwvNlAEF6HV0vY6QOW1vP2FV\\\/ZOganMbiRGRjDaRiO7mCOVqztuntvre2rjFA==\""
+        },
+        {
+            "log_id": 215,
+            "action_time": "2026-11-12 13:30:23",
+            "user_id": 1,
+            "entity_name": "users",
+            "entity_id": 1,
+            "action_type": "logout",
+            "before_json": null,
+            "after_json": null
+        },
+        {
+            "log_id": 216,
+            "action_time": "2026-11-12 13:31:04",
+            "user_id": 2,
+            "entity_name": "users",
+            "entity_id": 2,
+            "action_type": "login",
+            "before_json": null,
+            "after_json": "\"enc1:xMAhn8ZG0jqzOgD96pAZeNzGxlHooo9UG5l2gwJ1tsUvqpq8Ml0TKPpdir7FiKgKuNT273XFGeVUyw==\""
+        }
+    ]
+}
